@@ -1,0 +1,22 @@
+[package]
+name = "dumb_ai"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "chatglm"
+path = "src/bin/chatglm/main.rs"
+
+
+[dependencies]
+candle-core = { version = "0.5.1", features = ["cuda"] }
+tokio = { version = "1.37.0", features = ["full"] }
+hf-hub = { version = "0.3.2", features = ["tokio"] }
+anyhow = "1.0.86"
+clap = { version = "4.5.4", features = ["derive"] }
+tracing-subscriber = "0.3.18"
+candle-transformers = "0.5.1"
+candle-nn = "0.5.1"
+tokenizers = "0.19.1"
+tracing-chrome = "0.7.2"
+candle-examples = "0.5.1"
