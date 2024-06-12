@@ -210,9 +210,8 @@ checksum = "514de17de45fdb8dc022b1a7975556c53c86f9f0aa5f534b98977b171857c2c9"
 
 [[package]]
 name = "candle-core"
-version = "0.5.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "311d8dbe293aa3b5c34f6a57727fafd67d17a74fa8b65276501237c233b34ffd"
+version = "0.6.0"
+source = "git+https://github.com/huggingface/candle#9f804af29db1273f6580cc8d68b3f7a808f91ee6"
 dependencies = [
  "byteorder",
  "candle-kernels",
@@ -233,9 +232,8 @@ dependencies = [
 
 [[package]]
 name = "candle-examples"
-version = "0.5.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ad18efc24d80564d1e695bc724ac7bf89c6a3addf1b51468fb8a89c6eaadc6ed"
+version = "0.6.0"
+source = "git+https://github.com/huggingface/candle#9f804af29db1273f6580cc8d68b3f7a808f91ee6"
 dependencies = [
  "anyhow",
  "candle-core",
@@ -254,18 +252,16 @@ dependencies = [
 
 [[package]]
 name = "candle-kernels"
-version = "0.5.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d3b4b048ca298fb8be90b0f4d0fe68bdca9de956ab52bb6e381463d955f2b661"
+version = "0.6.0"
+source = "git+https://github.com/huggingface/candle#9f804af29db1273f6580cc8d68b3f7a808f91ee6"
 dependencies = [
  "bindgen_cuda",
 ]
 
 [[package]]
 name = "candle-nn"
-version = "0.5.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1efb293365959fc5feacbd93fa918980df2d9f2fb89853af02e33a830c10b49b"
+version = "0.6.0"
+source = "git+https://github.com/huggingface/candle#9f804af29db1273f6580cc8d68b3f7a808f91ee6"
 dependencies = [
  "candle-core",
  "half",
@@ -278,9 +274,8 @@ dependencies = [
 
 [[package]]
 name = "candle-transformers"
-version = "0.5.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b28968e2643d21c259d045f5eb42de07b0a3b7fc86ec8571aeb852721f9c189e"
+version = "0.6.0"
+source = "git+https://github.com/huggingface/candle#9f804af29db1273f6580cc8d68b3f7a808f91ee6"
 dependencies = [
  "byteorder",
  "candle-core",
@@ -445,9 +440,9 @@ dependencies = [
 
 [[package]]
 name = "cudarc"
-version = "0.11.3"
+version = "0.11.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b5f33a226d07ee5f4411c2c6bf4fa67f4873b1268be2eeec44f6ccc02d2ef0d3"
+checksum = "e395cd01168d63af826749573071f3c5069b338ae473cab355d22db0b2bb5a0d"
 dependencies = [
  "half",
  "libloading",
@@ -573,6 +568,8 @@ dependencies = [
  "candle-transformers",
  "clap",
  "hf-hub",
+ "serde",
+ "serde_json",
  "tokenizers",
  "tokio",
  "tracing-chrome",
