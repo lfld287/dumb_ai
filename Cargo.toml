@@ -11,6 +11,9 @@ path = "src/bin/chatglm/main.rs"
 name = "qwen2"
 path = "src/bin/qwen2/main.rs"
 
+[[bin]]
+name = "stable_diffusion"
+path = "src/bin/stable_diffusion/main.rs"
 
 [dependencies]
 tokio = { version = "1.37.0", features = ["full"] }
@@ -27,3 +30,4 @@ candle-examples = { git = "https://github.com/huggingface/candle" }
 candle-transformers = { git = "https://github.com/huggingface/candle" }
 candle-nn = { git = "https://github.com/huggingface/candle", features = ["cuda"] }
 candle-core = { git = "https://github.com/huggingface/candle", features = ["cuda"] }
+image = "0.25.1"
